@@ -190,12 +190,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        forceMaterialTransparency: true,
-        backgroundColor: Colors.transparent,
-        title: Text(widget.title, style: const TextStyle(fontWeight: FontWeight.bold)),
-        centerTitle: true,
-      ),
+      appBar: _cloudButtonVisible
+          ? AppBar(
+              forceMaterialTransparency: true,
+              backgroundColor: Colors.transparent,
+              title: Text(widget.title, style: const TextStyle(fontWeight: FontWeight.bold)),
+              centerTitle: true,
+            )
+          : null,
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
