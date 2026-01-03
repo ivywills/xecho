@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
   audioplayers: ^5.2.1
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,4 +24,5 @@ flutter:
   assets:
     - assets/boop.mp3
     - assets/beep.mp3
+    - assets/cloud.png
 
